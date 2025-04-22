@@ -14,6 +14,15 @@ body {
     background-color: #fff;
 }
 
+a {
+    text-decoration: none;
+    color: #63aeb8;
+}
+
+a:hover {
+    color: #8acdd6;
+}
+
 header {
     display: flex;
     justify-content: space-between;
