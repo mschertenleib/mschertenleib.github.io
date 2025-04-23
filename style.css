@@ -7,27 +7,18 @@
 body {
     font-family: Roboto, Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    max-width: 800px;
+    max-width: 900px;
     margin: 2rem auto;
     padding: 0 1rem;
     color: #333;
     background-color: #fff;
 }
 
-body a {
-    text-decoration: none;
-    color: #63aeb8;
-}
-
-body a:hover {
-    color: #8acdd6;
-}
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     border-bottom: 1px solid #ccc;
     padding: 0 1rem;
     color: #777;
@@ -48,6 +39,49 @@ header h1 {
     color: #181717;
 }
 
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project {
+    display: flex;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.project-image {
+    width: 400px;
+    height: auto;
+}
+
+.project-text {
+    padding: 0.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-text h3 {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    color: #555;
+    padding-bottom: 0.5rem;
+}
+
+.project-text h3 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-text h3 a:hover {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.7;
+}
+
+
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -65,6 +99,14 @@ header h1 {
     }
 
     .icon-linkedin {
-        content: url("icons/linkedin_white.png");
+        content: url("assets/icons/linkedin_white.png");
+    }
+
+    .project {
+        box-shadow: 0px 2px 8px rgb(0, 0, 0, 0.5);
+    }
+
+    .project-text h3 {
+        color: #bbb;
     }
 }
