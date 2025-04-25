@@ -53,14 +53,16 @@ header h1 {
 }
 
 .project-image {
-    width: 400px;
-    height: auto;
+    flex: 0 1 45%;
+    height: 12rem;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .project-text {
+    flex: 1 1 0;
     padding: 0.5rem 2rem;
-    display: flex;
-    flex-direction: column;
 }
 
 .project-text h3 {
