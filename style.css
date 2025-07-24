@@ -58,6 +58,7 @@ header h1 {
     padding-block: 1rem;
     display: flex;
     flex-direction: row;
+    gap: 1rem;
 }
 
 .project+.project {
@@ -76,7 +77,6 @@ header h1 {
     display: flex;
     flex-direction: column;
     flex: 1 1 0;
-    padding: 0.5rem 2rem;
 }
 
 .project-description h3 {
@@ -93,7 +93,7 @@ header h1 {
     gap: 2em;
     list-style: none;
     margin-top: auto;
-    padding: 0.5em;
+    padding: 0.5rem 0 0 0;
 }
 
 .project-links a {
@@ -126,5 +126,19 @@ header h1 {
 
     .project-description h3 {
         color: #bbb;
+    }
+}
+
+/* Stack image above text on small screens */
+@media (max-width: 40rem) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project-image {
+        flex: 0 0 auto;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
     }
 }
