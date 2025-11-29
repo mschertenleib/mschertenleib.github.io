@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mathieu Schertenleib</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" />
+  <style>
+    body {
+      font-family: Roboto, Arial, Helvetica, sans-serif;
+      line-height: 1.3;
+      margin: 2rem 2rem;
+      color: #333;
+      background-color: #fff;
+    }
+
+    body a {
+      text-decoration: none;
+      color: cadetblue;
+    }
+
+    body a:hover {
+      text-decoration: underline;
+      opacity: 0.7;
+    }
+
+    body h2 {
+      font-weight: lighter;
+      font-size: 1.5rem;
+      color: #666;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding: 0 1rem;
+      color: #666;
+    }
+
+    header h1 {
+      font-weight: lighter;
+      font-size: 2rem;
+    }
+
+    .icons {
+      display: flex;
+      gap: 1.5rem;
+      line-height: 0;
+    }
+
+    .icon-github {
+      color: #181717;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .image {
+      flex: 0 0 auto;
+      width: 100%;
+      height: 12rem;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .title {
+      flex: 0 0 auto;
+      margin: 1rem 0;
+    }
+
+    .description {
+      flex: 1 1 auto;
+      margin: 0 0 1rem 0;
+    }
+
+    .links {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 2rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #181818;
+        color: #ddd;
+      }
+
+      body h2 {
+        color: #999;
+      }
+
+      header {
+        color: #999;
+      }
+
+      .icon-github {
+        color: #fff;
+      }
+
+      .project {
+        border-color: #333;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Mathieu Schertenleib's projects</h1>
+    <div class="icons">
+      <a href="https://github.com/mschertenleib" aria-label="GitHub" target="_blank" rel="noopener">
+        <svg class="icon-github" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+            fill="currentColor" />
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/mathieu-schertenleib" aria-label="LinkedIn" target="_blank" rel="noopener">
+        <img class="icon-linkedin" src="icons/linkedin_blue.png" height="30" />
+      </a>
+    </div>
+  </header>
+
+  <template id="project-template">
+    <article class="project">
+      <img class="image" alt="" />
+      <h2 class="title"></h2>
+      <p class="description"></p>
+      <div class="links"></div>
+    </article>
+  </template>
+
+  <div id="projects" class="grid" aria-live="polite"></div>
+
+  <script type="application/json" id="projects-data">
+  [
+    {
+      "title": "Chocolate Recognition",
+      "image": "images/chocolate_recognition.png",
+      "description": "Deep learning challenge for detecting and counting chocolates in images. Master's image analysis and pattern recognition project.",
+      "repository": "https://github.com/mschertenleib/image_analysis_pattern_recognition"
+    },
+    {
+      "title": "Learning Rigid Objects Dynamics from Videos",
+      "image": "images/learning_objects_dynamics.png",
+      "description": "End-to-end PyTorch pipeline that learns rigid objects dynamics directly from raw video, pushing unsupervised, object-centric vision toward richer physical reasoning."
+    },
+    {
+      "title": "Predictive Analytics for a Hydropower Unit",
+      "image": "images/predictive_maintenance.png",
+      "description": "Implementation and evaluation of multiple anomaly detection approaches on a hydropower unit's generators, assessed using both synthetic anomalies and real operational data. The goal is to detect potential anomalies early and provide insights beyond the existing threshold-based monitoring system. Master's predictive maintenance ML project."
+    },
+    {
+      "title": "Reinforcement Learning for Agile Quadrupedal Locomotion over Challenging Terrains",
+      "image": "images/rl_quadruped.png",
+      "description": "Quadruped training with PPO using the GPU-accelerated Isaac Lab framework and PyTorch, enabling it to notably climb 30cm stair steps, tackle 60% slopes and clear 80cm gaps. A vision-only policy distilled for deployment with a single depth camera removed the need for height map computation and guided the robot's hardware roadmap. Master's robotics semester project, conducted at EPFL Xplore."
+    },
+    {
+      "title": "Aerial Robotics",
+      "image": "images/aerial_robotics.gif",
+      "description": "Simulation of a Crazyflie drone in Webots for a navigation task. The drone builds a map of its environment while searching for a platform in the landing area. Master's aerial robotics project.",
+      "repository": "https://github.com/mschertenleib/aerial_robotics_project"
+    },
+    {
+      "title": "Embedded Optical Flow",
+      "image": "images/embedded_optical_flow.gif",
+      "description": "Real-time optical flow on an FPGA, exploiting binary elementary motion detectors. Implemented as a Verilog module on a virtual prototype running a C firmware. Leverages custom instructions and DMA-accelerated streaming for efficient computation and overcoming memory bottlenecks. Master's embedded system design project.",
+      "repository": "https://github.com/mschertenleib/embedded_system_design"
+    },
+    {
+      "title": "Lausanne Time Machine",
+      "image": "images/lausanne_time_machine.png",
+      "description": "Water-related industries on the Flon and Louve rivers in 1727, 1831 and 1888 in Lausanne. Master's digital urban history project.",
+      "repository": "https://github.com/mschertenleib/lausanne_time_machine",
+      "website": "https://mschertenleib.github.io/lausanne_time_machine/"
+    },
+    {
+      "title": "Path Tracer",
+      "image": "images/path_tracer.png",
+      "description": "A path tracer running on the GPU, using the Vulkan ray tracing extensions. Developed out of personal intereset.",
+      "repository": "https://github.com/mschertenleib/path_tracer"
+    },
+    {
+      "title": "Caustics",
+      "image": "images/caustics.png",
+      "description": "A 2D path tracer running on the GPU, using OpenGL. Developed out of personal intereset.",
+      "repository": "https://github.com/mschertenleib/caustics"
+    },
+    {
+      "title": "Thymio Project",
+      "image": "images/thymio.gif",
+      "description": "Project using the Thymio robot. Uses vision from an overhead camera, sensory feedback and state estimation for robust navigation in an unknown environment, with arbitrary target positions. Master's mobile robotics project.",
+      "repository": "https://github.com/mschertenleib/mobile_robotics_project"
+    },
+    {
+      "title": "Topology Optimization",
+      "image": "images/topology_optimization.gif",
+      "description": "Exploring and understanding how topology optimization is implemented. Developed out of personal interest.",
+      "repository": "https://github.com/mschertenleib/topology_optimization"
+    },
+    {
+      "title": "Phased Array",
+      "image": "images/phased_array.gif",
+      "description": "An interactive simulation of a phased array. Developed out of personal interest.",
+      "repository": "https://github.com/mschertenleib/phased_array"
+    },
+    {
+      "title": "Pathfinder",
+      "image": "images/pathfinder.png",
+      "description": "Project using the E-Puck2 robot. Uses a TOF sensor and odometry to build a map of its environment and move around safely. Bachelor's robotics project, winner of the GCtronic Award.",
+      "repository": "https://github.com/mschertenleib/pathfinder",
+      "video": "https://www.youtube.com/watch?v=VZcvgjDBHKk"
+    },
+    {
+      "title": "Reverse Engineering",
+      "image": "images/reverse_engineering.png",
+      "description": "Reverse engineering of a wood plane. Bachelor's manufacturing technologies project."
+    },
+    {
+      "title": "SileX",
+      "image": "images/silex.png",
+      "description": "Dynamically balanced two-degree-of-freedom roll/pitch mechanism for the high-frequency scanner of a femtosecond laser micromachining machine. Bachelor's mechanism design project."
+    },
+    {
+      "title": "Seeder",
+      "image": "images/seeder.png",
+      "description": "Seeder with configurable seed size and spacing. Bachelor's mechanical design project."
+    }
+  ]
+  </script>
+
+  <script>
+    (function () {
+      const template = document.getElementById('project-template');
+      const target = document.getElementById('projects');
+      const projectsData = document.getElementById('projects-data').textContent.trim();
+      let projects = [];
+      try {
+        projects = JSON.parse(projectsData);
+      } catch (e) {
+        console.error('Invalid projects JSON', e);
+      }
+
+      const fragment = document.createDocumentFragment();
+      projects.forEach(p => {
+        const node = template.content.cloneNode(true);
+        const image = node.querySelector('.image');
+        const title = node.querySelector('.title');
+        const description = node.querySelector('.description');
+        const links = node.querySelector('.links');
+
+        image.src = p.image || '';
+        image.alt = p.title + ' image';
+        title.textContent = p.title || '';
+        description.textContent = p.description || '';
+
+        const linkElements = [];
+        const linkNames = {
+          repository: 'GitHub',
+          video: 'Video',
+          website: 'Website'
+        };
+        Object.entries(linkNames).forEach(([prop, name]) => {
+          const href = p[prop];
+          if (!href) return;
+          const a = document.createElement('a');
+          a.href = href;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          a.textContent = name;
+          linkElements.push(a);
+        });
+        if (linkElements.length) {
+          links.append(...linkElements);
+        }
+
+        fragment.appendChild(node);
+      });
+
+      target.appendChild(fragment);
+    })();
+  </script>
+</body>
+
+</html>
