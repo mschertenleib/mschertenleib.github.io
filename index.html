@@ -87,6 +87,12 @@
       margin: 0 0 1rem 0;
     }
 
+    .context {
+      flex: 0 0 auto;
+      margin: 0 0 1rem 0;
+      color: #888;
+    }
+
     .bottom-container {
       display: flex;
       flex-direction: row;
@@ -95,7 +101,7 @@
 
     .date {
       flex: 0 0 auto;
-      font-weight: lighter;
+      color: #888;
     }
 
     .links {
@@ -127,6 +133,14 @@
       .project {
         border-color: #333;
       }
+
+      .context {
+        color: #777;
+      }
+
+      .date {
+        color: #777;
+      }
     }
   </style>
 </head>
@@ -153,6 +167,7 @@
       <img class="image" alt="" />
       <h2 class="title"></h2>
       <p class="description"></p>
+      <div class="context"></div>
       <div class="bottom-container">
         <div class="date"></div>
         <div class="links"></div>
@@ -168,115 +183,153 @@
       "title": "Truss Optimization",
       "image": "images/truss_optimization.webp",
       "description": "Interactive optimization of truss structures minimizing compliance at a given material budget.",
-      "repository": "https://github.com/mschertenleib/truss_optimization",
-      "date": "In progress"
+      "context": "personal",
+      "date": "In progress",
+      "repository": "https://github.com/mschertenleib/truss_optimization"
     },
     {
       "title": "Caustics",
       "image": "images/caustics.png",
-      "description": "A 2D path tracer running on the GPU, using OpenGL. Developed out of personal intereset.",
-      "repository": "https://github.com/mschertenleib/caustics",
-      "date": "In progress"
+      "description": "A 2D path tracer running on the GPU, using OpenGL.",
+      "context": "personal",
+      "date": "In progress",
+      "repository": "https://github.com/mschertenleib/caustics"
     },
     {
       "title": "Path Tracer",
       "image": "images/path_tracer.png",
-      "description": "A path tracer running on the GPU, using the Vulkan ray tracing extensions. Developed out of personal intereset.",
-      "repository": "https://github.com/mschertenleib/path_tracer",
-      "date": "In progress"
+      "description": "A path tracer running on the GPU, using the Vulkan ray tracing extensions.",
+      "context": "personal",
+      "date": "In progress",
+      "repository": "https://github.com/mschertenleib/path_tracer"
     },
     {
       "title": "Topology Optimization",
       "image": "images/topology_optimization.gif",
-      "description": "Exploring and understanding how topology optimization is implemented. Developed out of personal interest.",
-      "repository": "https://github.com/mschertenleib/topology_optimization",
-      "date": "In progress"
+      "description": "Exploring and understanding how topology optimization is implemented.",
+      "context": "personal",
+      "date": "In progress",
+      "repository": "https://github.com/mschertenleib/topology_optimization"
     },
     {
       "title": "Chocolate Recognition",
       "image": "images/chocolate_recognition.png",
-      "description": "Deep learning challenge for detecting and counting chocolates in images. Master's image analysis and pattern recognition project.",
-      "repository": "https://github.com/mschertenleib/image_analysis_pattern_recognition",
-      "date": "2025"
+      "description": "Deep learning challenge for detecting and counting chocolates in images.",
+      "context": "course",
+      "course": "EE-451 Image analysis and pattern recognition",
+      "collaborators": ["Alice D'Agostino", "Jarl Stephansson"],
+      "date": "2025",
+      "repository": "https://github.com/mschertenleib/image_analysis_pattern_recognition"
     },
     {
       "title": "Learning Rigid Objects Dynamics from Videos",
       "image": "images/learning_objects_dynamics.png",
       "description": "End-to-end PyTorch pipeline that learns rigid objects dynamics directly from raw video, pushing unsupervised, object-centric vision toward richer physical reasoning.",
+      "context": "semester",
+      "lab": "Intelligent Maintenance and Operations Systems (IMOS)",
       "date": "2025"
     },
     {
       "title": "Predictive Analytics for a Hydropower Unit",
       "image": "images/predictive_maintenance.png",
-      "description": "Implementation and evaluation of multiple anomaly detection approaches on a hydropower unit's generators, assessed using both synthetic anomalies and real operational data. The goal is to detect potential anomalies early and provide insights beyond the existing threshold-based monitoring system. Master's predictive maintenance ML project.",
+      "description": "Implementation and evaluation of multiple anomaly detection approaches on a hydropower unit's generators, assessed using both synthetic anomalies and real operational data. The goal is to detect potential anomalies early and provide insights beyond the existing threshold-based monitoring system.",
+      "context": "course",
+      "course": "CIVIL-426 Machine learning for predictive maintenance applications",
+      "collaborators": ["Mateja Đerić", "Alexei Ermochkine"],
       "date": "2024"
     },
     {
       "title": "Reinforcement Learning for Agile Quadrupedal Locomotion over Challenging Terrains",
       "image": "images/rl_quadruped.png",
-      "description": "Quadruped training with PPO using the GPU-accelerated Isaac Lab framework and PyTorch, enabling it to notably climb 30cm stair steps, tackle 60% slopes and clear 80cm gaps. A vision-only policy distilled for deployment with a single depth camera removed the need for height map computation and guided the robot's hardware roadmap. Master's robotics semester project, conducted at EPFL Xplore.",
+      "description": "Quadruped training with PPO using the GPU-accelerated Isaac Lab framework and PyTorch, enabling it to notably climb 30cm stair steps, tackle 60% slopes and clear 80cm gaps. A vision-only policy distilled for deployment with a single depth camera removed the need for height map computation and guided the robot's hardware roadmap.",
+      "context": "semester",
+      "association": "EPFL Xplore",
       "date": "2024"
     },
     {
       "title": "Aerial Robotics",
       "image": "images/aerial_robotics.gif",
-      "description": "Simulation of a Crazyflie drone in Webots for a navigation task. The drone builds a map of its environment while searching for a platform in the landing area. Master's aerial robotics project.",
-      "repository": "https://github.com/mschertenleib/aerial_robotics_project",
-      "date": "2024"
+      "description": "Simulation of a Crazyflie drone in Webots for a navigation task. The drone builds a map of its environment while searching for a platform in the landing area.",
+      "context": "course",
+      "course": "MICRO-502 Aerial robotics",
+      "date": "2024",
+      "repository": "https://github.com/mschertenleib/aerial_robotics_project"
     },
     {
       "title": "Embedded Optical Flow",
       "image": "images/embedded_optical_flow.gif",
-      "description": "Real-time optical flow on an FPGA, exploiting binary elementary motion detectors. Implemented as a Verilog module on a virtual prototype running a C firmware. Leverages custom instructions and DMA-accelerated streaming for efficient computation and overcoming memory bottlenecks. Master's embedded system design project.",
-      "repository": "https://github.com/mschertenleib/embedded_system_design",
-      "date": "2024"
+      "description": "Real-time optical flow on an FPGA, exploiting binary elementary motion detectors. Implemented as a Verilog module on a virtual prototype running a C firmware. Leverages custom instructions and DMA-accelerated streaming for efficient computation and overcoming memory bottlenecks.",
+      "context": "course",
+      "course": "CS-476 Embedded system design",
+      "collaborators": ["Gilles Regamey"],
+      "date": "2024",
+      "repository": "https://github.com/mschertenleib/embedded_system_design"
     },
     {
       "title": "Lausanne Time Machine",
       "image": "images/lausanne_time_machine.png",
-      "description": "Water-related industries on the Flon and Louve rivers in 1727, 1831 and 1888 in Lausanne. Master's digital urban history project.",
+      "description": "Water-related industries on the Flon and Louve rivers in 1727, 1831 and 1888 in Lausanne.",
+      "context": "course",
+      "course": "HUM-454 Digital urban history: Lausanne Time Machine II",
+      "collaborators": ["Nora Bugmann", "Alice Dareys", "Lucas Pereira", "Erik Dagnaud", "Xavier Declerck"],
+      "date": "2024",
       "repository": "https://github.com/mschertenleib/lausanne_time_machine",
-      "website": "https://mschertenleib.github.io/lausanne_time_machine/",
-      "date": "2024"
+      "website": "https://mschertenleib.github.io/lausanne_time_machine/"
     },
     {
       "title": "Phased Array",
       "image": "images/phased_array.gif",
-      "description": "An interactive simulation of a phased array. Developed out of personal interest.",
-      "repository": "https://github.com/mschertenleib/phased_array",
-      "date": "2024"
+      "description": "An interactive simulation of a phased array.",
+      "context": "personal",
+      "date": "2024",
+      "repository": "https://github.com/mschertenleib/phased_array"
     },
     {
       "title": "Thymio Project",
       "image": "images/thymio.gif",
-      "description": "Project using the Thymio robot. Uses vision from an overhead camera, sensory feedback and state estimation for robust navigation in an unknown environment, with arbitrary target positions. Master's mobile robotics project.",
-      "repository": "https://github.com/mschertenleib/mobile_robotics_project",
-      "date": "2023"
+      "description": "Project using the Thymio robot. Uses vision from an overhead camera, sensory feedback and state estimation for robust navigation in an unknown environment, with arbitrary target positions.",
+      "context": "course",
+      "course": "MICRO-452 Basics of mobile robotics",
+      "collaborators": ["Maria Cherchouri", "Jacques Bénand", "Théo Maetz"],
+      "date": "2023",
+      "repository": "https://github.com/mschertenleib/mobile_robotics_project"
     },
     {
       "title": "Pathfinder",
       "image": "images/pathfinder.png",
-      "description": "Project using the E-Puck2 robot. Uses a TOF sensor and odometry to build a map of its environment and move around safely. Bachelor's robotics project, winner of the GCtronic Award.",
+      "description": "Project using the E-Puck2 robot. Uses a TOF sensor and odometry to build a map of its environment and move around safely.",
+      "context": "course",
+      "course": "MICRO-315 Embedded systems and robotics",
+      "collaborators": ["Gilles Regamey"],
+      "date": "2022",
       "repository": "https://github.com/mschertenleib/pathfinder",
-      "video": "https://www.youtube.com/watch?v=VZcvgjDBHKk",
-      "date": "2022"
+      "video": "https://www.youtube.com/watch?v=VZcvgjDBHKk"
     },
     {
       "title": "Reverse Engineering",
       "image": "images/reverse_engineering.png",
-      "description": "Reverse engineering of a wood plane. Bachelor's manufacturing technologies project.",
+      "description": "Reverse engineering of a wood plane.",
+      "context": "course",
+      "course": "MICRO-301 Manufacturing technologies",
+      "collaborators": ["Jonas Daverio", "Ludovic Pirker"],
       "date": "2022"
     },
     {
       "title": "SileX",
       "image": "images/silex.png",
-      "description": "Dynamically balanced two-degree-of-freedom roll/pitch mechanism for the high-frequency scanner of a femtosecond laser micromachining machine. Bachelor's mechanism design project.",
+      "description": "Dynamically balanced two-degree-of-freedom roll/pitch mechanism for the high-frequency scanner of a femtosecond laser micromachining machine.",
+      "context": "course",
+      "course": "MICRO-201 Mechanism design II",
+      "collaborators": ["Gilles Regamey", "Naël Dillenbourg", "Sufyan Zakeeruddin", "Yassir Belguerch"],
       "date": "2021"
     },
     {
       "title": "Seeder",
       "image": "images/seeder.png",
-      "description": "Seeder with configurable seed size and spacing. Bachelor's mechanical design project.",
+      "description": "Seeder with configurable seed size and spacing.",
+      "context": "course",
+      "course": "ME-107 Mechanical construction II",
+      "collaborators": ["Pierre Parvex", "Enzo Osman", "Yann Gourraud"],
       "date": "2020"
     }
   ]
@@ -300,6 +353,7 @@
         const image = node.querySelector('.image');
         const title = node.querySelector('.title');
         const description = node.querySelector('.description');
+        const context = node.querySelector('.context');
         const date = node.querySelector('.date');
         const links = node.querySelector('.links');
 
@@ -308,6 +362,36 @@
         title.textContent = p.title || '';
         description.textContent = p.description || '';
         date.textContent = p.date || '';
+
+        if (p.context === 'personal') {
+          context.appendChild(document.createTextNode('Developed out of personal interest'));
+        } else if (p.context === 'course' && p.course) {
+          context.appendChild(document.createTextNode('Developed for the EPFL course '));
+          const courseEl = document.createElement('i');
+          courseEl.textContent = p.course;
+          context.appendChild(courseEl);
+        } else if (p.context === 'semester') {
+          context.appendChild(document.createTextNode('Developed as an EPFL robotics semester project'));
+        }
+
+        if (p.lab) {
+          context.appendChild(document.createTextNode(', conducted in the lab '));
+          const labEl = document.createElement('i');
+          labEl.textContent = p.lab;
+          context.appendChild(labEl);
+        } else if (p.association) {
+          context.appendChild(document.createTextNode(', conducted in the student-led association '));
+          const associationEl = document.createElement('i');
+          associationEl.textContent = p.association;
+          context.appendChild(associationEl);
+        }
+
+        if (Array.isArray(p.collaborators) && p.collaborators.length > 0) {
+          const names = p.collaborators.length === 1
+            ? p.collaborators[0]
+            : `${p.collaborators.slice(0, -1).join(', ')} and ${p.collaborators[p.collaborators.length - 1]}`;
+          context.appendChild(document.createTextNode(`, with ${names}`));
+        }
 
         const linkElements = [];
         const linkNames = {
