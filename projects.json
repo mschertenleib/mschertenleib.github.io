@@ -1,0 +1,195 @@
+[
+    {
+        "title": "Truss Optimization",
+        "image": "images/truss_optimization.webp",
+        "description": "Interactive optimization of truss structures minimizing compliance at a given material budget.",
+        "context": "personal",
+        "date": "In progress",
+        "repository": "https://github.com/mschertenleib/truss_optimization"
+    },
+    {
+        "title": "Caustics",
+        "image": "images/caustics.png",
+        "description": "A 2D path tracer running on the GPU, using OpenGL.",
+        "context": "personal",
+        "date": "In progress",
+        "repository": "https://github.com/mschertenleib/caustics"
+    },
+    {
+        "title": "Path Tracer",
+        "image": "images/path_tracer.png",
+        "description": "A path tracer running on the GPU, using the Vulkan ray tracing extensions.",
+        "context": "personal",
+        "date": "In progress",
+        "repository": "https://github.com/mschertenleib/path_tracer"
+    },
+    {
+        "title": "Topology Optimization",
+        "image": "images/topology_optimization.gif",
+        "description": "Exploring and understanding how topology optimization is implemented.",
+        "context": "personal",
+        "date": "In progress",
+        "repository": "https://github.com/mschertenleib/topology_optimization"
+    },
+    {
+        "title": "Chocolate Recognition",
+        "image": "images/chocolate_recognition.png",
+        "description": "Deep learning challenge for detecting and counting chocolates in images.",
+        "context": "course",
+        "course": "EE-451 Image analysis and pattern recognition",
+        "collaborators": [
+            "Alice D'Agostino",
+            "Jarl Stephansson"
+        ],
+        "date": "2025",
+        "repository": "https://github.com/mschertenleib/image_analysis_pattern_recognition"
+    },
+    {
+        "title": "Learning Rigid Objects Dynamics from Videos",
+        "image": "images/learning_objects_dynamics.png",
+        "description": "End-to-end PyTorch pipeline that learns rigid objects dynamics directly from raw video, pushing unsupervised, object-centric vision toward richer physical reasoning.",
+        "context": "semester",
+        "lab": "Intelligent Maintenance and Operations Systems (IMOS)",
+        "date": "2025"
+    },
+    {
+        "title": "Predictive Analytics for a Hydropower Unit",
+        "image": "images/predictive_maintenance.png",
+        "description": "Implementation and evaluation of multiple anomaly detection approaches on a hydropower unit's generators, assessed using both synthetic anomalies and real operational data. The goal is to detect potential anomalies early and provide insights beyond the existing threshold-based monitoring system.",
+        "context": "course",
+        "course": "CIVIL-426 Machine learning for predictive maintenance applications",
+        "collaborators": [
+            "Mateja Đerić",
+            "Alexei Ermochkine"
+        ],
+        "date": "2024"
+    },
+    {
+        "title": "Reinforcement Learning for Agile Quadrupedal Locomotion over Challenging Terrains",
+        "image": "images/rl_quadruped.png",
+        "description": "Quadruped training with PPO using the GPU-accelerated Isaac Lab framework and PyTorch, enabling it to notably climb 30cm stair steps, tackle 60% slopes and clear 80cm gaps. A vision-only policy distilled for deployment with a single depth camera removed the need for height map computation and guided the robot's hardware roadmap.",
+        "context": "semester",
+        "association": "EPFL Xplore",
+        "date": "2024"
+    },
+    {
+        "title": "Aerial Robotics",
+        "image": "images/aerial_robotics.gif",
+        "description": "Simulation of a Crazyflie drone in Webots for a navigation task. The drone builds a map of its environment while searching for a platform in the landing area.",
+        "context": "course",
+        "course": "MICRO-502 Aerial robotics",
+        "date": "2024",
+        "repository": "https://github.com/mschertenleib/aerial_robotics_project"
+    },
+    {
+        "title": "Embedded Optical Flow",
+        "image": "images/embedded_optical_flow.gif",
+        "description": "Real-time optical flow on an FPGA, exploiting binary elementary motion detectors. Implemented as a Verilog module on a virtual prototype running a C firmware. Leverages custom instructions and DMA-accelerated streaming for efficient computation and overcoming memory bottlenecks.",
+        "context": "course",
+        "course": "CS-476 Embedded system design",
+        "collaborators": [
+            "Gilles Regamey"
+        ],
+        "date": "2024",
+        "repository": "https://github.com/mschertenleib/embedded_system_design"
+    },
+    {
+        "title": "Lausanne Time Machine",
+        "image": "images/lausanne_time_machine.png",
+        "description": "Water-related industries on the Flon and Louve rivers in 1727, 1831 and 1888 in Lausanne.",
+        "context": "course",
+        "course": "HUM-454 Digital urban history: Lausanne Time Machine II",
+        "collaborators": [
+            "Nora Bugmann",
+            "Alice Dareys",
+            "Lucas Pereira",
+            "Erik Dagnaud",
+            "Xavier Declerck"
+        ],
+        "date": "2024",
+        "repository": "https://github.com/mschertenleib/lausanne_time_machine",
+        "website": "https://mschertenleib.github.io/lausanne_time_machine/"
+    },
+    {
+        "title": "Phased Array",
+        "image": "images/phased_array.gif",
+        "description": "An interactive simulation of a phased array.",
+        "context": "personal",
+        "date": "2024",
+        "repository": "https://github.com/mschertenleib/phased_array"
+    },
+    {
+        "title": "Image Learning",
+        "image": "images/image_learning.jpg",
+        "description": "A neural network implemented from scratch learning the mapping between pixel coordinates and pixel color of an image, using Fourier features.",
+        "context": "personal",
+        "date": "2024",
+        "repository": "https://github.com/mschertenleib/neural_image"
+    },
+    {
+        "title": "Thymio Project",
+        "image": "images/thymio.gif",
+        "description": "Project using the Thymio robot. Uses vision from an overhead camera, sensory feedback and state estimation for robust navigation in an unknown environment, with arbitrary target positions.",
+        "context": "course",
+        "course": "MICRO-452 Basics of mobile robotics",
+        "collaborators": [
+            "Maria Cherchouri",
+            "Jacques Bénand",
+            "Théo Maetz"
+        ],
+        "date": "2023",
+        "repository": "https://github.com/mschertenleib/mobile_robotics_project"
+    },
+    {
+        "title": "Pathfinder",
+        "image": "images/pathfinder.png",
+        "description": "Project using the E-Puck2 robot. Uses a TOF sensor and odometry to build a map of its environment and move around safely.",
+        "context": "course",
+        "course": "MICRO-315 Embedded systems and robotics",
+        "collaborators": [
+            "Gilles Regamey"
+        ],
+        "date": "2022",
+        "repository": "https://github.com/mschertenleib/pathfinder",
+        "video": "https://www.youtube.com/watch?v=VZcvgjDBHKk"
+    },
+    {
+        "title": "Reverse Engineering",
+        "image": "images/reverse_engineering.png",
+        "description": "Reverse engineering of a wood plane.",
+        "context": "course",
+        "course": "MICRO-301 Manufacturing technologies",
+        "collaborators": [
+            "Jonas Daverio",
+            "Ludovic Pirker"
+        ],
+        "date": "2022"
+    },
+    {
+        "title": "SileX",
+        "image": "images/silex.png",
+        "description": "Dynamically balanced two-degree-of-freedom roll/pitch mechanism for the high-frequency scanner of a femtosecond laser micromachining machine.",
+        "context": "course",
+        "course": "MICRO-201 Mechanism design II",
+        "collaborators": [
+            "Gilles Regamey",
+            "Naël Dillenbourg",
+            "Sufyan Zakeeruddin",
+            "Yassir Belguerch"
+        ],
+        "date": "2021"
+    },
+    {
+        "title": "Seeder",
+        "image": "images/seeder.png",
+        "description": "Seeder with configurable seed size and spacing.",
+        "context": "course",
+        "course": "ME-107 Mechanical construction II",
+        "collaborators": [
+            "Pierre Parvex",
+            "Enzo Osman",
+            "Yann Gourraud"
+        ],
+        "date": "2020"
+    }
+]
